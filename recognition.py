@@ -12,7 +12,6 @@ DIRECTION_MAP = {
     "yo": "front",
     "fist": "back",
 }
-
 MODEL_PATH = os.path.join(os.getcwd(), "gesture_model.keras")
 LABELS_PATH = os.path.join(os.getcwd(), "label_encoder.npy")
 
