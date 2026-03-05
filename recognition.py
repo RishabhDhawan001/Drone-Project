@@ -31,12 +31,8 @@ def main():
         print("Trained model or labels missing. Run train_model.py first.")
         return
 
-    # Load model
     model = keras.models.load_model(MODEL_PATH)
-
-    # FIX: allow_pickle=True
     classes = np.load(LABELS_PATH, allow_pickle=True)
-
     mp_hands = mp.solutions.hands
     mp_draw = mp.solutions.drawing_utils
 
